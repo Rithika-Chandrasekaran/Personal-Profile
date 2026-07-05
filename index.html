@@ -127,6 +127,7 @@
       box-shadow: 0 8px 18px rgba(47, 111, 208, 0.25);
       border: 4px solid #ffffff;
       object-fit:cover;
+      flex-shrink: 0;
     }
 
     .section-title {
@@ -186,6 +187,80 @@
       .profile-card:hover{
           transform:scale(1.01);
           transition:0.3s;
+      }
+
+      /* mobile responsive improvements */
+      body {
+        padding: 16px;
+      }
+      .header h1 {
+        font-size: 1.8rem;
+      }
+      .header .caption {
+        font-size: 0.9rem;
+      }
+      .profile-info p {
+        font-size: 0.95rem;
+        word-break: break-word;
+      }
+      .photo {
+        width: 150px;
+        height: 150px;
+        font-size: 2rem;
+      }
+      .content {
+        padding: 16px;
+      }
+      .sidebar {
+        padding: 16px 14px;
+      }
+      table {
+        font-size: 0.9rem;
+      }
+      th, td {
+        padding: 10px 10px;
+      }
+      .section-title {
+        font-size: 1.1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 12px;
+      }
+      .header h1 {
+        font-size: 1.5rem;
+      }
+      .header .caption {
+        font-size: 0.8rem;
+      }
+      .photo {
+        width: 130px;
+        height: 130px;
+        font-size: 1.6rem;
+      }
+      .profile-info p {
+        font-size: 0.9rem;
+      }
+      .content {
+        padding: 12px;
+      }
+      .sidebar {
+        padding: 12px 10px;
+      }
+      table {
+        font-size: 0.8rem;
+      }
+      th, td {
+        padding: 8px 8px;
+      }
+      .section-title {
+        font-size: 1rem;
+      }
+      .footer {
+        font-size: 12px;
+        padding: 14px;
       }
     }
   </style>
@@ -258,4 +333,3 @@
   
 </body>
 </html>
- 
